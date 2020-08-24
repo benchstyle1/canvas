@@ -1,0 +1,28 @@
+$graph-axis_margin: 30px;
+$graph_width: 900px + ($graph-axis_margin * 2);
+$graph_height: 500px + ($graph-axis_margin * 2);
+
+body {
+  background-color: black;
+}
+
+.graph {
+  width: $graph_width;
+  height: $graph_height;
+  background-color: #c4c4c4;
+  margin: calc((100vh - #{$graph_height}) / 2) auto;
+  border: 1px solid #c4c4c4;
+}
+
+.graph-axis {
+  width: calc(#{$graph_width} - (#{$graph-axis_margin} * 2));
+  height: calc(#{$graph_height} - (#{$graph-axis_margin} * 2));
+  margin: $graph-axis_margin;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+canvas {
+  width: calc(#{$graph_width} - (#{$graph-axis_margin} * 2));
+  height: calc(#{$graph_height} - (#{$graph-axis_margin} * 2));
+}

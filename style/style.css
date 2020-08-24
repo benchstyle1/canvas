@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+
+.graph {
+  width: 960px;
+  height: 560px;
+  background-color: #c4c4c4;
+  margin: calc((100vh - 560px) / 2) auto;
+  border: 1px solid #c4c4c4;
+}
+
+.graph-axis {
+  width: calc(960px - (30px * 2));
+  height: calc(560px - (30px * 2));
+  margin: 30px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+canvas {
+  width: calc(960px - (30px * 2));
+  height: calc(560px - (30px * 2));
+}
+/*# sourceMappingURL=style.css.map */
